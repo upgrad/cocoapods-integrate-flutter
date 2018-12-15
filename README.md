@@ -1,6 +1,6 @@
 # cocoapods-integrate-flutter
 
-A description of cocoapods-integrate-flutter.
+Uses the podhelper.rb from the flutter repository and adds to the pre_install hook of cocoapods. Integrates the flutter project without polluting the main Podfile.
 
 ## Installation
 
@@ -8,4 +8,9 @@ A description of cocoapods-integrate-flutter.
 
 ## Usage
 
-    $ pod spec flutter POD_NAME
+	In your host project Podfile, write the below line
+    ```
+    plugin 'cocoapods-integrate-flutter' , {
+  		:flutter_application_path => '../src'
+	}
+	```

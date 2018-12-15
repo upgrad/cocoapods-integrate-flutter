@@ -9,8 +9,9 @@ Uses the podhelper.rb from the flutter repository and adds to the pre_install ho
 ## Usage
 
 	In your host project Podfile, write the below line
-    ```
+    
     plugin 'cocoapods-integrate-flutter' , {
   		:flutter_application_path => '../src'
 	}
-	```
+
+	where src is the path to your flutter project

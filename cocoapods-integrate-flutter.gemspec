@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['me@prateekgrover.com']
   spec.description   = %q{Uses the podhelper.rb from the flutter repository and adds to the pre_install hook of cocoapods. Integrates the flutter project without polluting the main Podfile.}
   spec.summary       = %q{A plugin to integrate flutter with existing iOS application.}
-  spec.homepage      = 'https://github.com/upgrad/cocoapods-integrate-flutter/cocoapods-integrate-flutter'
+  spec.homepage      = 'https://github.com/upgrad/cocoapods-integrate-flutter'
   spec.license       = 'MIT'
 
   spec.files         = Dir['lib/**/*']

@@ -32,7 +32,8 @@ module CocoapodsIntegrateFlutter
 			    symlink = File.join(@symlinks_dir, r[:name])
 			    FileUtils.rm_f(symlink)
 			    File.symlink(r[:path], symlink)
-			    pod r[:name], :path => File.join(symlink, 'ios')
+                # Doing this in main project Podfile. Figure out a way to do this here.
+			    # Pod::Command::Install.run r[:name], :path => File.join(symlink, 'ios')
 			}
         end
 
